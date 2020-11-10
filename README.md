@@ -14,4 +14,5 @@ For 10000 iterations, the generator creates distinguishable anime character face
 ## Scope
 
 1) The features of the anime faces are refined and distinguishable with longer hair of various colors and large faces with small prominent chins. 
+
 2)However, in many of the images, the generator struggles to produce eyes of the same color with minimal blurring. To alleviate these issues in the future, training on the DCGAN can be done for a larger number of iterations or the convolutional blocks can be replaced with residual blocks that utilize skip connections to minimize loss.
