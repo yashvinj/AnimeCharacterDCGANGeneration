@@ -7,3 +7,8 @@ Anime is Japanese art style for drawing and animating cartoon characters. It is 
 ## Methodology
 10000 iterations were used to train the DCGAN model. The batch size of 64 remains the same but the learning rate is increased to 0.0004 as there are fewer iterations to train the dataset. Moreover, a weight decay value of 1e-8 was applied to prevent the weights from growing too large. The DCGAN model also incorporates generated random noise using normal distribution to its input labels to improve the performance of the discriminator. 
 For each epoch, the anime image created by the generator and the binary cross entropy losses of both the discriminator and the generator are plotted. Figure 2 shows a sequential progression of the generation of images along with respective losses of the components for that epoch. The duration of training for 10000 iterations was around 4 hours in the Google Colab environment. 
+
+## Results
+
+For 10000 iterations, the generator creates distinguishable anime character faces with low generator and discriminator loss. The generator shows best performance in creating believable anime facial structures, noses, hair, and hair color. However, in some of the images, the eyes are often blurred due to training loss and the irises of the eyes are slightly different color shades from each other.
+
